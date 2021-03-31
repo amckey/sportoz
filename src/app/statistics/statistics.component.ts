@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PeopleService } from '../people.service';
 
 @Component({
   selector: 'app-statistics',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatisticsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private peopleService: PeopleService) { }
 
   ngOnInit(): void {
+    this.peopleService.getAll().subscribe(
+      (data: any) => this.userList = data
+    )
   }
+
+   userList: any;
 
 }
