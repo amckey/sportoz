@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.page {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.footer {
+  width: 100%;
+  margin-top: auto
+}
+

@@ -1,0 +1,51 @@
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #135aac;
+  color: white;
+  font-weight: 600;
+}
+
+.logo {
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  opacity: 1;
+  color: whitesmoke;
+}
+
+a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+nav {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+  margin-right: 60px;
+}
+
+.nav a {
+  padding: 1.282em 15px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
