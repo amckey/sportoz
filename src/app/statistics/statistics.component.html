@@ -1,5 +1,7 @@
 <p>Здесь будет статистика</p>
 
+
+<p *ngIf="!userList">Loading...</p>
 <ul>
   <li *ngFor="let item of userList.values">Имя: {{item[1]}} {{item[2]}}, Личный счет: {{item[3]}}</li>
 </ul>
