@@ -2,16 +2,16 @@
 
 
 <p *ngIf="!userList">Loading...</p>
-<ul>
-  <li *ngFor="let item of userList.values">Имя: {{item[2]}} {{item[3]}}, Личный счет: {{item[4]}}</li>
+<ul *ngIf="userList">
+  <li *ngFor="let item of filteredUserList">Имя: {{item[2]}} {{item[3]}}, Возраст: {{item[4]}}, Личный счет: {{item[5]}}</li>
 </ul>
 
 <mat-form-field appearance="fill" *ngIf="userList">
   <mat-label>Пол</mat-label>
-  <mat-select #mySelect disableRipple (selectionChange)="testingThat()">
+  <mat-select #mySelect1 disableRipple (selectionChange)="filterList()">
     <mat-option></mat-option>
-    <mat-option value="2">М</mat-option>
-    <mat-option value="3">Ж</mat-option>
+    <mat-option value="2">Мужской</mat-option>
+    <mat-option value="3">Женский</mat-option>
   </mat-select>
 </mat-form-field>
 
@@ -19,7 +19,7 @@
 
 <mat-form-field appearance="fill" *ngIf="userList">
   <mat-label>Возраст</mat-label>
-  <mat-select #mySelect (selectionChange)="testingThat()">
+  <mat-select #mySelect2 disableRipple (selectionChange)="filterList()">
     <mat-option></mat-option>
     <mat-option value="2">до 16</mat-option>
     <mat-option value="3">16-25</mat-option>

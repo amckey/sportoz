@@ -8,7 +8,7 @@ export class PeopleService {
 
   constructor(private http: HttpClient) { }
 
-  url = "https://sheets.googleapis.com/v4/spreadsheets/1VaWq_8EaxQCDNd_wdDquYg1Zgj_XZ1j7zRnaBESC3xw/values/A2:E700?key=AIzaSyBWShOPtlsq02N--cm4ZIJudonMVTKv6uA"
+  url = "https://sheets.googleapis.com/v4/spreadsheets/1VaWq_8EaxQCDNd_wdDquYg1Zgj_XZ1j7zRnaBESC3xw/values/A2:F700?key=AIzaSyBWShOPtlsq02N--cm4ZIJudonMVTKv6uA"
 
   getAll() {
     return this.http.get(this.url);
