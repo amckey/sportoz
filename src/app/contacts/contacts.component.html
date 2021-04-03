@@ -1,1 +1,42 @@
-<p>Здесь будет страница контактов</p>
+<div class="container" name="container" id="container">
+
+  <div class=container-intro>
+    <p class=intro-title>Get in touch with us</p>
+    <p class=intro-subtitle>There's always an opportunity to find a solution for something, contact us and we'll find one for you.</p>
+  </div>
+
+  <div class="container-inner">
+
+    <iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display:none;">
+    </iframe>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdeBPpaMfV4NadpOhpfGOJXqfOktNIfmQoh7fyWHbvisftXJA/formResponse"
+    method="post"
+    target="hidden_iframe"
+    (submit)="showSuccessfulMessage()"
+    >
+        <div class=container-inner-content>
+          <input class=component-input type="text" placeholder="Name*" name="entry.2005620554" required>
+        </div>
+
+        <div class=container-inner-content>
+          <input class=component-input type="text" placeholder="Age*" name="entry.1045781291" required>
+        </div>
+
+        <div class=container-inner-content>
+          <input class=component-input type="tel" placeholder="Number*" name="entry.1065046570" required>
+        </div>
+        <div class=component-inner-button>
+          <button class=component-button type="submit" id="button">Send</button>
+        </div>
+  </form>
+  </div>
+
+  <div *ngIf="ch">
+    <p>Application has been successfully sent!</p>
+  </div>
+
+</div>

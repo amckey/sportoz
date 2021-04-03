@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contacts',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.css']
 })
 export class ContactsComponent implements OnInit {
-
-  constructor() { }
+  ch: any;
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  showSuccessfulMessage() {
+    this.ch = true;
   }
 
 }

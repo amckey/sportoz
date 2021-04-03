@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+  height: 90vh;
+}
+
+.container-intro {
+  padding-top: 120px;
+  text-align: center;
+  line-height: 3em;
+}
+
+.intro-title {
+  font-size: 30pt;
+}
+
+.intro-subtitle {
+  font-size: 15pt;
+}
+
+.container-inner {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-inner-content {
+  width: 60vh;
+  display: flex;
+  justify-content: center;
+  font-size: 15pt;
+  margin: 30px;
+  line-height: 1.4em;
+}
+
+.component-input {
+  border-radius: 5px;
+  background-color: whitesmoke;
+  width: 100%;
+  min-height: 40px;
+  max-height: 300px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: 0 1px 3px rgb(20 50 0 / 15%);
+  padding: 15px;
+}
+
+
+.component-inner-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.component-button {
+  background-color: whitesmoke;
+  font-size: 13pt;
+  opacity: 0.9;
+}
+
+.component-button:active {
+  background-color: white;
+}
+
