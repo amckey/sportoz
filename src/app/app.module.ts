@@ -36,7 +36,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
       {path: 'statistics', component: StatisticsComponent},
       {path: 'contacts', component: ContactsComponent},
       {path: '**', component: HomepageComponent},
-        ]),
+        ], {
+          useHash: true
+        }),
 
   ],
   providers: [],
