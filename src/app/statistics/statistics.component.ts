@@ -12,6 +12,7 @@ export class StatisticsComponent implements OnInit {
 
   ngOnInit(): void {
     this.peopleService.getAll().subscribe(
+
       (data: any) => this.userList = data.values)
 
      this.peopleService.getAll().subscribe(
@@ -21,10 +22,17 @@ export class StatisticsComponent implements OnInit {
   @ViewChild('mySelect1') mySelect1: any;
   @ViewChild('mySelect2') mySelect2: any;
 
+  rendered: any;
   userList: any;
   filteredUserList: any
   filter1: any;
   filter2: any;
+
+  emitLoader() {
+    setTimeout(() => {
+      this.userList ? this.rendered = true : this.emitLoader()
+    }, 1250);
+  }
 
   filterList() {
     this.filteredUserList = []

@@ -13,6 +13,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     FooterComponent,
     HomepageComponent,
     StatisticsComponent,
-    ContactsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     MatFormFieldModule,
     HttpClientModule,
     AppRoutingModule,
+    MatProgressSpinnerModule,
     MatSelectModule,
     RouterModule,
     RouterModule.forRoot([

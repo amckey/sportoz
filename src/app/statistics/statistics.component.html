@@ -1,28 +1,42 @@
-<p>Здесь будет статистика</p>
+{{emitLoader()}}
+<div class=container>
+  <div *ngIf="!rendered" class=rendering>
+      <mat-progress-spinner mode="indeterminate" class=loader></mat-progress-spinner>
+  </div>
 
+  <div *ngIf="rendered">
+    <mat-form-field appearance="fill" *ngIf="rendered">
+      <mat-label>Пол</mat-label>
+      <mat-select #mySelect1 disableRipple (selectionChange)="filterList()">
+        <mat-option></mat-option>
+        <mat-option value="2">Мужской</mat-option>
+        <mat-option value="3">Женский</mat-option>
+      </mat-select>
+    </mat-form-field>
 
-<p *ngIf="!userList">Loading...</p>
-<ul *ngIf="userList">
-  <li *ngFor="let item of filteredUserList">Имя: {{item[2]}} {{item[3]}}, Возраст: {{item[4]}}, Личный счет: {{item[5]}}</li>
-</ul>
+    <div></div>
 
-<mat-form-field appearance="fill" *ngIf="userList">
-  <mat-label>Пол</mat-label>
-  <mat-select #mySelect1 disableRipple (selectionChange)="filterList()">
-    <mat-option></mat-option>
-    <mat-option value="2">Мужской</mat-option>
-    <mat-option value="3">Женский</mat-option>
-  </mat-select>
-</mat-form-field>
+    <mat-form-field appearance="fill" *ngIf="rendered">
+      <mat-label>Возраст</mat-label>
+      <mat-select #mySelect2 disableRipple (selectionChange)="filterList()">
+        <mat-option></mat-option>
+        <mat-option value="2">до 16</mat-option>
+        <mat-option value="3">16-25</mat-option>
+        <mat-option value="4">25-50</mat-option>
+      </mat-select>
+    </mat-form-field>
 
-<div></div>
-
-<mat-form-field appearance="fill" *ngIf="userList">
-  <mat-label>Возраст</mat-label>
-  <mat-select #mySelect2 disableRipple (selectionChange)="filterList()">
-    <mat-option></mat-option>
-    <mat-option value="2">до 16</mat-option>
-    <mat-option value="3">16-25</mat-option>
-    <mat-option value="4">25-50</mat-option>
-  </mat-select>
-</mat-form-field>
+    <table *ngIf="rendered">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Personal score</th>
+      </tr>
+      <tr #listen *ngFor="let item of filteredUserList; let last = last">
+        <td>{{item[2]}} {{item[3]}}</td>
+        <td>{{item[4]}}</td>
+        <td>{{item[5]}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

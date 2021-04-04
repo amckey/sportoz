@@ -12,6 +12,7 @@ export class PeopleService {
 
   getAll() {
     return this.http.get(this.url);
+
   }
 }
 
