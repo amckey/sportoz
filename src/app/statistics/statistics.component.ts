@@ -30,7 +30,7 @@ export class StatisticsComponent implements OnInit {
 
   emitLoader() {
     setTimeout(() => {
-      this.userList ? this.rendered = true : this.emitLoader()
+     this.rendered = true
     }, 1250);
   }
 
