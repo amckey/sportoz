@@ -762,12 +762,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 class FooterComponent {
-    constructor() { }
+    constructor() {
+        this.instagramImage = '../../assets/instagram.svg';
+        this.facebookImage = '../../assets/facebook.svg';
+        this.phoneImage = '../../assets/phone.svg';
+        this.emailImage = '../../assets/email.svg';
+    }
     ngOnInit() {
+    }
+    changeImagesSources() {
+        this.instagramImage = './assets/instagram.svg';
+        this.facebookImage = './assets/facebook.svg';
+        this.phoneImage = './assets/phone.svg';
+        this.emailImage = './assets/email.svg';
     }
 }
 FooterComponent.ɵfac = function FooterComponent_Factory(t) { return new (t || FooterComponent)(); };
-FooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], decls: 26, vars: 0, consts: [[1, "footer"], [1, "footer-inner"], [1, "footer-inner-logo"], ["href", "https://www.instagram.com/artyom_coach/", "target", "_blank", "rel", "noopener noreferrer"], ["src", "../../assets/instagram.svg"], ["href", "https://www.facebook.com/artyomcoach/", "target", "_blank", "rel", "noopener noreferrer"], ["src", "../../assets/facebook.svg"], [2, "opacity", "0.95"], [1, "footer-inner-logo-title"], [1, "footer-inner-contacts"], [1, "footer-inner-contacts-title"], [1, "footer-inner-contacts-items"], ["src", "../../assets/phone.svg"], ["src", "../../assets/email.svg"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
+FooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FooterComponent, selectors: [["app-footer"]], decls: 26, vars: 4, consts: [[1, "footer"], [1, "footer-inner"], [1, "footer-inner-logo"], ["href", "https://www.instagram.com/artyom_coach/", "target", "_blank", "rel", "noopener noreferrer"], ["onerror", "changeImagesSources()", 3, "src"], ["href", "https://www.facebook.com/artyomcoach/", "target", "_blank", "rel", "noopener noreferrer"], [2, "opacity", "0.95"], [1, "footer-inner-logo-title"], [1, "footer-inner-contacts"], [1, "footer-inner-contacts-title"], [1, "footer-inner-contacts-items"]], template: function FooterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -779,12 +790,12 @@ FooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "img", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "img", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "h2", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "h2", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "VFS \u00A9 2021");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "h3");
@@ -792,18 +803,18 @@ FooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "h2", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "h2", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "img", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "img", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "+371 20058098");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "img", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "img", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "artur970@gmail.com");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -811,6 +822,15 @@ FooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx.instagramImage, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx.facebookImage, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx.phoneImage, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", ctx.emailImage, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
     } }, styles: [".footer[_ngcontent-%COMP%] {\n  height: 180px;\n  background-color:#135aac;\n  color: #ffffffd8;\n  align-items: center;\n}\n\n.footer-inner[_ngcontent-%COMP%] {\n  padding-top: 35px;\n  display: flex;\n  justify-content: space-between;\n}\n\n.footer-inner-logo[_ngcontent-%COMP%] {\n  margin-left: 30%;\n}\n\n.footer-inner-logo[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 25px;\n  max-height: 25px;\n  opacity: 0.9;\n}\n\n.footer-inner-logo[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover {\n  opacity: 0.7;\n}\n\n.footer-inner-logo-title[_ngcontent-%COMP%] {\n  padding-top: 15px;\n}\n\n.footer-inner-contacts[_ngcontent-%COMP%] {\n  margin-right: 30%;\n}\n\n.footer-inner-contacts[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 20px;\n  max-height: 20px;\n  opacity: 0.9;\n}\n\n.footer-inner-contacts[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover {\n  opacity: 0.7;\n}\n\n.footer-inner-contacts-title[_ngcontent-%COMP%] {\n  padding-bottom: 20px;\n}\n\n.footer-inner-contacts-items[_ngcontent-%COMP%] {\n  width: 170px;\n  display: flex;\n  justify-content: space-between;\n  opacity: 0.95;\n}\n\nli[_ngcontent-%COMP%] {\n  display: inline;\n}\n\nli[_ngcontent-%COMP%]    + li[_ngcontent-%COMP%] {\n  padding-left: 15px;\n}\n\nh2[_ngcontent-%COMP%], h3[_ngcontent-%COMP%] {\n  margin: 0 !important;\n  padding: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLHdCQUF3QjtFQUN4QixnQkFBZ0I7RUFDaEIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYiw4QkFBOEI7QUFDaEM7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLFlBQVk7QUFDZDs7QUFDQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsWUFBWTtBQUNkOztBQUNBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0Usb0JBQW9CO0FBQ3RCOztBQUVBO0VBQ0UsWUFBWTtFQUNaLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsYUFBYTtBQUNmOztBQUdBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQixVQUFVO0FBQ1oiLCJmaWxlIjoiZm9vdGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9vdGVyIHtcbiAgaGVpZ2h0OiAxODBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjojMTM1YWFjO1xuICBjb2xvcjogI2ZmZmZmZmQ4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uZm9vdGVyLWlubmVyIHtcbiAgcGFkZGluZy10b3A6IDM1cHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcbn1cblxuLmZvb3Rlci1pbm5lci1sb2dvIHtcbiAgbWFyZ2luLWxlZnQ6IDMwJTtcbn1cblxuLmZvb3Rlci1pbm5lci1sb2dvIGltZyB7XG4gIG1heC13aWR0aDogMjVweDtcbiAgbWF4LWhlaWdodDogMjVweDtcbiAgb3BhY2l0eTogMC45O1xufVxuLmZvb3Rlci1pbm5lci1sb2dvIGltZzpob3ZlciB7XG4gIG9wYWNpdHk6IDAuNztcbn1cblxuLmZvb3Rlci1pbm5lci1sb2dvLXRpdGxlIHtcbiAgcGFkZGluZy10b3A6IDE1cHg7XG59XG5cbi5mb290ZXItaW5uZXItY29udGFjdHMge1xuICBtYXJnaW4tcmlnaHQ6IDMwJTtcbn1cblxuLmZvb3Rlci1pbm5lci1jb250YWN0cyBpbWcge1xuICBtYXgtd2lkdGg6IDIwcHg7XG4gIG1heC1oZWlnaHQ6IDIwcHg7XG4gIG9wYWNpdHk6IDAuOTtcbn1cbi5mb290ZXItaW5uZXItY29udGFjdHMgaW1nOmhvdmVyIHtcbiAgb3BhY2l0eTogMC43O1xufVxuXG4uZm9vdGVyLWlubmVyLWNvbnRhY3RzLXRpdGxlIHtcbiAgcGFkZGluZy1ib3R0b206IDIwcHg7XG59XG5cbi5mb290ZXItaW5uZXItY29udGFjdHMtaXRlbXMge1xuICB3aWR0aDogMTcwcHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgb3BhY2l0eTogMC45NTtcbn1cblxuXG5saSB7XG4gIGRpc3BsYXk6IGlubGluZTtcbn1cblxubGkgKyBsaSB7XG4gIHBhZGRpbmctbGVmdDogMTVweDtcbn1cblxuaDIsIGgzIHtcbiAgbWFyZ2luOiAwICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDA7XG59XG5cbiJdfQ== */"] });
 
 
