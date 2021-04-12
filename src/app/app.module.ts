@@ -14,6 +14,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { IntroductionComponent } from './homepage/introduction/introduction.component';
+import { PartnersComponent } from './homepage/partners/partners.component';
+import { TrainingsComponent } from './homepage/trainings/trainings.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     FooterComponent,
     HomepageComponent,
     StatisticsComponent,
-    ContactsComponent
+    ContactsComponent,
+    IntroductionComponent,
+    PartnersComponent,
+    TrainingsComponent,
   ],
   imports: [
     BrowserModule,

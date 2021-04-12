@@ -22,17 +22,12 @@ export class StatisticsComponent implements OnInit {
   @ViewChild('mySelect1') mySelect1: any;
   @ViewChild('mySelect2') mySelect2: any;
 
-  rendered: any;
+  rendered: any = true;
   userList: any;
   filteredUserList: any
   filter1: any;
   filter2: any;
-
-  emitLoader() {
-    setTimeout(() => {
-     this.rendered = true
-    }, 1250);
-  }
+  tableContainsData: any;
 
   filterList() {
     this.filteredUserList = []
@@ -47,36 +42,109 @@ export class StatisticsComponent implements OnInit {
       this.filteredUserList = this.userList;
     }
 
+    this.checkForEmpty()
+
+  }
+
+  checkForEmpty() {
+    (this.filteredUserList.length == 0) ? this.tableContainsData = true : this.tableContainsData = false;
   }
 
   sharedFilter() {
     this.filter1 = this.mySelect1.selected.viewValue;
     this.filter2 = this.mySelect2.selected.value;
 
-    for (let item of this.userList) {
+    switch (this.filter2) {
 
-      if (this.filter2 == 2) {
-          if (item[4] <= 16 && item[1] === this.filter1) {
-            this.filteredUserList.push(item)
-          }
-        }
-      }
-
-      if (this.filter2 == 3) {
+      case "2":
         for (let item of this.userList) {
-          if (item[4] >= 16 && item[4] <= 25 && item[1] === this.filter1) {
+          if (item[4] >= 7 && item[4] <= 8 && item[1] === this.filter1) {
             this.filteredUserList.push(item)
           }
         }
-      }
+        break;
 
-      if (this.filter2 == 4) {
+      case "3":
         for (let item of this.userList) {
-          if (item[4] >= 25 && item[4] <= 50 && item[1] === this.filter1) {
+          if (item[4] >= 9 && item[4] <= 10 && item[1] === this.filter1) {
             this.filteredUserList.push(item)
           }
         }
-      }
+        break;
+
+      case "4":
+        for (let item of this.userList) {
+          if (item[4] >= 11 && item[4] <= 12 && item[1] === this.filter1) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "5":
+        for (let item of this.userList) {
+          if (item[4] >= 13 && item[4] <= 15 && item[1] === this.filter1) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "6":
+        for (let item of this.userList) {
+          if (item[4] >= 16 && item[4] <= 18 && item[1] === this.filter1) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "7":
+        for (let item of this.userList) {
+          if (item[4] >= 18 && item[4] <= 29 && item[1] === this.filter1) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "8":
+        for (let item of this.userList) {
+          if (item[4] >= 30 && item[4] <= 39 && item[1] === this.filter1) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "9":
+        for (let item of this.userList) {
+          if (item[4] >= 40 && item[4] <= 49 && item[1] === this.filter1) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "10":
+        for (let item of this.userList) {
+          if (item[4] >= 50 && item[4] <= 59 && item[1] === this.filter1) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "11":
+        for (let item of this.userList) {
+          if (item[4] >= 60 && item[4] <= 69 && item[1] === this.filter1) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "12":
+        for (let item of this.userList) {
+          if (item[4] >= 70 && item[1] === this.filter1) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+    }
+
     }
 
   genderFilter() {
@@ -87,41 +155,101 @@ export class StatisticsComponent implements OnInit {
         this.filteredUserList.push(item)
       }
     }
-
   }
 
   ageFilter() {
     this.filter2 = this.mySelect2.selected.value;
 
-    if (this.filter2 == 2) {
-      for (let item of this.userList) {
-        if (item[4] <= 16) {
-          this.filteredUserList.push(item)
+    switch (this.filter2) {
+
+      case "2":
+        for (let item of this.userList) {
+          if (item[4] >= 7 && item[4] <= 8) {
+            this.filteredUserList.push(item)
+          }
         }
-      }
+        break;
+
+      case "3":
+        for (let item of this.userList) {
+          if (item[4] >= 9 && item[4] <= 10) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+      case "4":
+        for (let item of this.userList) {
+          if (item[4] >= 11 && item[4] <= 12) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "5":
+        for (let item of this.userList) {
+          if (item[4] >= 13 && item[4] <= 15) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "6":
+        for (let item of this.userList) {
+          if (item[4] >= 16 && item[4] <= 18) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "7":
+        for (let item of this.userList) {
+          if (item[4] >= 18 && item[4] <= 29) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "8":
+        for (let item of this.userList) {
+          if (item[4] >= 30 && item[4] <= 39) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "9":
+        for (let item of this.userList) {
+          if (item[4] >= 40 && item[4] <= 49) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "10":
+        for (let item of this.userList) {
+          if (item[4] >= 50 && item[4] <= 59) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "11":
+        for (let item of this.userList) {
+          if (item[4] >= 60 && item[4] <= 69) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
+
+        case "12":
+        for (let item of this.userList) {
+          if (item[4] >= 70) {
+            this.filteredUserList.push(item)
+          }
+        }
+        break;
     }
 
-    if (this.filter2 == 3) {
-      for (let item of this.userList) {
-        if (item[4] >= 16 && item[4] <= 25) {
-          this.filteredUserList.push(item)
-        }
-      }
-    }
-
-    if (this.filter2 == 4) {
-      for (let item of this.userList) {
-        if (item[4] >= 25 && item[4] <= 50) {
-          this.filteredUserList.push(item)
-        }
-      }
-    }
   }
-
 }
-
-
-/* if (this.mySelect1.empty) {
-  this.filteredUserList = this.userList;
-  return
-} */

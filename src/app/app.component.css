@@ -1,8 +1,6 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding-top: 120px;
-  padding-left: 20px;
 }
 
 .header {
@@ -25,3 +23,6 @@
   margin-top: auto
 }
 
+.whitespace {
+  margin: 30px;
+}

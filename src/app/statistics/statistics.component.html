@@ -1,10 +1,13 @@
-{{emitLoader()}}
 <div class=container>
-  <div *ngIf="!rendered" class=rendering>
-      <mat-progress-spinner mode="indeterminate" class=loader></mat-progress-spinner>
+
+  <div class=container-intro>
+    <h1 class=container-intro-title>Результаты прохождения тестирования</h1>
+    <p class=container-intro-subtitle>Пройдя тестирование, ты попадёшь в эту таблицу со своим результатом (<b>золотой</b>, <b>серебряный</b>, <b>бронзовый</b> и <b>без оценки</b>). Продолжай тренироваться и не останавливайся на достигнутом!<br><br> Не забывай, что данные таблицы обновляются с каждым новым этапом тестирования!</p>
   </div>
 
-  <div *ngIf="rendered">
+  <div class=container-filters *ngIf="rendered">
+
+    <div class=filter>
     <mat-form-field appearance="fill" *ngIf="rendered">
       <mat-label>Пол</mat-label>
       <mat-select #mySelect1 disableRipple (selectionChange)="filterList()">
@@ -13,30 +16,48 @@
         <mat-option value="3">Женский</mat-option>
       </mat-select>
     </mat-form-field>
+  </div>
 
-    <div></div>
-
-    <mat-form-field appearance="fill" *ngIf="rendered">
+  <div class=filter>
+    <mat-form-field appearance="fill">
       <mat-label>Возраст</mat-label>
       <mat-select #mySelect2 disableRipple (selectionChange)="filterList()">
         <mat-option></mat-option>
-        <mat-option value="2">до 16</mat-option>
-        <mat-option value="3">16-25</mat-option>
-        <mat-option value="4">25-50</mat-option>
+        <mat-option value="2">7-8</mat-option>
+        <mat-option value="3">9-10</mat-option>
+        <mat-option value="4">11-12</mat-option>
+        <mat-option value="5">13-15</mat-option>
+        <mat-option value="6">16-18</mat-option>
+        <mat-option value="7">18-29</mat-option>
+        <mat-option value="8">30-39</mat-option>
+        <mat-option value="9">40-49</mat-option>
+        <mat-option value="10">50-59</mat-option>
+        <mat-option value="11">60-69</mat-option>
+        <mat-option value="12">{{'>70'}}</mat-option>
       </mat-select>
     </mat-form-field>
+  </div>
 
-    <table *ngIf="rendered">
+  </div>
+
+  <div class=container-table>
+
+    <table>
       <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Personal score</th>
+        <th>Имя</th>
+        <th>Возраст</th>
+        <th>Результат</th>
+        <th>Команда</th>
       </tr>
       <tr #listen *ngFor="let item of filteredUserList; let last = last">
         <td>{{item[2]}} {{item[3]}}</td>
         <td>{{item[4]}}</td>
         <td>{{item[5]}}</td>
+        <td>{{item[6]}}</td>
       </tr>
     </table>
+
   </div>
+  <div *ngIf="tableContainsData" class=container-table-no-data>Нет данных</div>
+
 </div>

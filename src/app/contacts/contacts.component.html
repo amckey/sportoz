@@ -1,8 +1,6 @@
-<div class="container" name="container" id="container">
-
-  <div class=container-intro>
-    <p class=intro-title>Get in touch with us</p>
-    <p class=intro-subtitle>There's always an opportunity to find a solution for something, contact us and we'll find one for you.</p>
+<div class=container-intro>
+    <p class=container-intro-title>Связаться с нами</p>
+    <p class=container-intro-subtitle>Запишись на тренировку к профессиональному тренеру и сравни свой результат до и после! Помни, что даже получив высшую оценку по нормативам, необходимо поддерживать отличную форму!</p>
   </div>
 
   <div class="container-inner">
@@ -19,24 +17,24 @@
     (submit)="showSuccessfulMessage()"
     >
         <div class=container-inner-content>
-          <input class=component-input type="text" placeholder="Name*" name="entry.2005620554" required>
+          <input class=component-input type="text" placeholder="Полное имя*" name="entry.2005620554" required>
         </div>
 
         <div class=container-inner-content>
-          <input class=component-input type="text" placeholder="Age*" name="entry.1045781291" required>
+          <input class=component-input type="text" placeholder="Возраст*" name="entry.1045781291" required>
         </div>
 
         <div class=container-inner-content>
-          <input class=component-input type="tel" placeholder="Number*" name="entry.1065046570" required>
+          <input class=component-input type="tel" placeholder="Номер телефона*" name="entry.1065046570" required>
         </div>
         <div class=component-inner-button>
-          <button class=component-button type="submit" id="button">Send</button>
+          <button class=component-button type="submit" id="button">Отправить</button>
         </div>
   </form>
   </div>
 
-  <div *ngIf="ch">
-    <p>Application has been successfully sent!</p>
-  </div>
 
-</div>
+  <div class=container-successful-message>
+    <p *ngIf="!ch" class=whitespace></p>
+    <p *ngIf="ch"><b>Заявка была отправлена, мы свяжемся с вами в течение 24 часов!</b></p>
+  </div>

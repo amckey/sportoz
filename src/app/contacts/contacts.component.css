@@ -1,20 +1,21 @@
-.container {
-  width: 100%;
-  height: 90vh;
-}
-
 .container-intro {
   padding-top: 120px;
+  width: 60%;
   text-align: center;
-  line-height: 3em;
+  margin: 30px auto;
+  border-bottom: 1px solid lightgray;
 }
 
-.intro-title {
-  font-size: 30pt;
+.container-intro-title {
+  font-size: 25pt;
+  color: rgb(49, 49, 49);
+  padding-bottom: 25px;
 }
 
-.intro-subtitle {
-  font-size: 15pt;
+.container-intro-subtitle {
+  font-size: 11pt;
+  color: rgb(80, 80, 80);
+  padding: 20px;
 }
 
 .container-inner {
@@ -58,6 +59,7 @@
 
 .component-button {
   background-color: whitesmoke;
+ color: rgb(49, 49, 49);
   font-size: 13pt;
   opacity: 0.9;
 }
@@ -66,3 +68,17 @@
   background-color: white;
 }
 
+.container-successful-message {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whitespace {
+  margin: 10px;
+}
+
+p {
+  margin: 0;
+}
