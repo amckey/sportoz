@@ -12,10 +12,10 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  instagramImage: any = './assets/instagram.svg'
-  facebookImage: any = './assets/facebook.svg'
-  phoneImage: any = '../assets/phone.svg'
-  emailImage: any = '../assets/email.svg'
+  instagramImage: any = './instagram.svg'
+  facebookImage: any = './facebook.svg'
+  phoneImage: any = './phone.svg'
+  emailImage: any = './email.svg'
 
  /*  changeImagesSources() {
     this.instagramImage = './assets/instagram.svg'
