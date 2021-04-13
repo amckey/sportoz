@@ -18,7 +18,7 @@ h1, h2, h3, ul, li, a {
   margin: 0;
   padding: 0;
 }
-a {text-decoration: none; transition: .2s;}
+a {text-decoration: none; transition: .2s; -webkit-tap-highlight-color: transparent;}
 a:visited { text-decoration: none; color:whitesmoke; }
 a:hover { text-decoration: none; color:whitesmoke; transition: .2s; cursor: pointer;}
 a:focus { text-decoration: none; color:whitesmoke; }

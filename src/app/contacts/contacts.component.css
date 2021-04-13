@@ -84,6 +84,10 @@ p {
 }
 
 @media (max-width: 500px) {
+  .container-intro {
+    width: 80%;
+  }
+
   .container-inner-content {
     width: 50vh;
   }
