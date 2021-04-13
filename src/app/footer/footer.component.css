@@ -78,11 +78,14 @@ h2, h3 {
 
 @media (max-width: 600px) {
   .footer {
-    height: 30vh;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
   }
 
   .footer-inner {
-    padding-top: 15%
+    padding: 0;
+    width: 100%;
    }
 
   .footer-inner-logo {
