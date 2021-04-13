@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 .container-intro {
   padding-top: 120px;
   width: 60%;
@@ -59,7 +63,7 @@
 
 .component-button {
   background-color: whitesmoke;
- color: rgb(49, 49, 49);
+  color: rgb(49, 49, 49);
   font-size: 13pt;
   opacity: 0.9;
 }
@@ -79,6 +83,18 @@
   margin: 10px;
 }
 
-p {
-  margin: 0;
+@media (max-width: 500px) {
+  .container-inner-content {
+    width: 50vh;
+  }
+
+  .container-intro-title {
+    font-size: 20pt;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-inner-content {
+    width: 35vh;
+  }
 }
