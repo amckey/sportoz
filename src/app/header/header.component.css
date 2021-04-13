@@ -72,7 +72,13 @@ li:last-child {
   flex: 1 0 auto;
 }
 
-button {
+.sidenav {
+  background-color: #135aacd3;
+  color: whitesmoke;
+}
+
+.mat-icon {
+  font-size: 25pt;
   background-color: transparent;
   border: none;
   display: flex;
@@ -82,18 +88,19 @@ button {
   outline: none;
 }
 
-button:hover {
-  opacity: 0.7;
+.mat-icon:hover {
+    opacity: 0.7;
 }
 
-.sidenav {
-  background-color: #135aacd3;
-  color: whitesmoke;
-}
+
 
 @media (max-width: 900px) {
   nav {
     display: none;
+  }
+
+  .logo {
+    margin-left: 30px;
   }
 
   .burger {
