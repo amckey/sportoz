@@ -54,6 +54,7 @@ li:last-child {
   display: none;
   margin-right: 30px;
   margin-top: -10px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .burger-menu-container {
@@ -79,6 +80,7 @@ li:last-child {
 
 .mat-icon {
   font-size: 25pt;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 900px) {
