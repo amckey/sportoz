@@ -91,10 +91,6 @@ p {
   .container-inner-content {
     width: 50vh;
   }
-
-  .container-intro-title {
-    font-size: 20pt;
-  }
 }
 
 @media (max-width: 400px) {

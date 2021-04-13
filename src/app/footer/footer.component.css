@@ -78,7 +78,7 @@ h2, h3 {
 
 @media (max-width: 600px) {
   .footer {
-    height: 25vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
   }
