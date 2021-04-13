@@ -763,10 +763,10 @@ __webpack_require__.r(__webpack_exports__);
 
 class FooterComponent {
     constructor() {
-        this.instagramImage = './assets/instagram.svg';
-        this.facebookImage = './assets/facebook.svg';
-        this.phoneImage = './assets/phone.svg';
-        this.emailImage = './assets/email.svg';
+        this.instagramImage = 'docs/assets/instagram.svg';
+        this.facebookImage = 'docs/assets/facebook.svg';
+        this.phoneImage = 'docs/assets/phone.svg';
+        this.emailImage = 'docs/assets/email.svg';
     }
     ngOnInit() {
     }
