@@ -14,7 +14,7 @@
       <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
 
         <div class=burger-button>
-          <button (click)="snav.toggle()" mat-icon-button color="accent" aria-label="Example icon button with a menu icon"><mat-icon>menu</mat-icon></button>
+          <mat-icon (click)="snav.toggle()">menu</mat-icon>
         </div>
 
         <mat-sidenav-container class="example-sidenav-container"
