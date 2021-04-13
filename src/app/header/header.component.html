@@ -1,5 +1,5 @@
 <div class=header>
-    <div class=logo><a routerLink="">VFS</a>
+    <div class=logo><a routerLink="" (click)="menuIsOpened ? toggleSideMenu() : undefined">VFS</a>
     </div>
     <nav class=nav>
       <ul>
@@ -13,11 +13,11 @@
       <mat-icon>menu</mat-icon>
     </div>
 
-    <div class=burgen-menu-container *ngIf="this.menuIsOpened">
+    <div class=burger-menu-container *ngIf="this.menuIsOpened">
       <ul>
-        <li><a routerLink="">Главная</a></li>
-        <li><a routerLink="statistics">Результаты</a></li>
-        <li><a routerLink="contacts">Связаться с нами</a></li>
+        <li class=container-link (click)="toggleSideMenu()"><a routerLink="">Главная</a></li>
+        <li class=container-link (click)="toggleSideMenu()"><a routerLink="statistics">Результаты</a></li>
+        <li class=container-link (click)="toggleSideMenu()"><a routerLink="contacts">Связаться с нами</a></li>
       </ul>
     </div>
 
