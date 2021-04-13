@@ -18,3 +18,10 @@
   font-size: 40pt;
   line-height: 1.4em;
 }
+
+@media (max-width: 450px) {
+  .container-inner {
+    text-align: center;
+    margin: 0;
+  }
+}

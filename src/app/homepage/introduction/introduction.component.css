@@ -25,4 +25,8 @@
   opacity: 0.9;
 }
 
-
+@media (max-width: 450px) {
+  .container-inner {
+    margin: 0 auto;
+  }
+}
