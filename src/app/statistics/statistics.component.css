@@ -4,10 +4,10 @@ ul {
 
 table {
   border-collapse: collapse;
-  width: 65%;
   font-size: 0.9em;
-  min-width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  table-layout: fixed;
 }
 
 table tr:nth-of-type(even) {
@@ -80,11 +80,16 @@ td {
   justify-content: center;
 }
 
+.centered {
+  text-align: center;
+}
+
 .container-table {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 !important;
+  width: 65%;
 }
 
 .container-table-no-data {
@@ -105,7 +110,10 @@ td {
   }
 
   table {
-    min-width: none;
     font-size: 0.7em;
+  }
+
+  .container-table {
+    width: 95%;
   }
 }

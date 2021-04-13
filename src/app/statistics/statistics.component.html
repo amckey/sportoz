@@ -40,23 +40,25 @@
 
   </div>
 
-  <div class=container-table>
+  <div class=centered>
+    <div class=container-table>
 
-    <table>
-      <tr>
-        <th>Имя</th>
-        <th>Возраст</th>
-        <th>Результат</th>
-        <th>Команда</th>
-      </tr>
-      <tr #listen *ngFor="let item of filteredUserList; let last = last">
-        <td>{{item[2]}} {{item[3]}}</td>
-        <td>{{item[4]}}</td>
-        <td>{{item[5]}}</td>
-        <td>{{item[6]}}</td>
-      </tr>
-    </table>
+      <table>
+        <tr>
+          <th>Имя</th>
+          <th>Возраст</th>
+          <th>Результат</th>
+          <th>Команда</th>
+        </tr>
+        <tr #listen *ngFor="let item of filteredUserList; let last = last">
+          <td>{{item[2]}} {{item[3]}}</td>
+          <td>{{item[4]}}</td>
+          <td>{{item[5]}}</td>
+          <td>{{item[6]}}</td>
+        </tr>
+      </table>
 
+    </div>
   </div>
   <div *ngIf="tableContainsData" class=container-table-no-data>Нет данных</div>
 
