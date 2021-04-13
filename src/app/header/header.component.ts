@@ -33,4 +33,7 @@ export class HeaderComponent implements OnInit {
 
   shouldRun = [/(^|\.)plnkr\.co$/, /(^|\.)stackblitz\.io$/].some(h => h.test(window.location.host));
 
+  sayYo(): void {
+    console.log('yo')
+  }
 }
