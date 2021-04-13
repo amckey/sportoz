@@ -59,9 +59,9 @@ li:last-child {
 }
 
 .burger-button {
-  position: absolute;
-  top: 30px;
-  right: 20px;
+  position: flex;
+  padding-top: 30px;
+  padding-right: 20px;
 }
 
 .example-sidenav-container {
