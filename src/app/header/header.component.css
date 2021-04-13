@@ -54,77 +54,20 @@ li:last-child {
   font-size: 30pt;
 }
 
-.burger {
+.burger-menu-button {
   display: none;
+  margin-right: 30px;
 }
 
-/* .burger-button {
-  position: flex;
-  padding-top: 30px;
-  padding-right: 20px;
-}
-
-.example-sidenav-container {
-  flex: 1;
-}
-
-.example-is-mobile .example-sidenav-container {
-  flex: 1 0 auto;
-}
-
-.sidenav {
-  z-index: 10;
-  background-color: #135aacd3;
-  color: whitesmoke;
-}
-
-.mat-icon {
-  font-size: 25pt;
-  background-color: transparent;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  outline: none;
-}
-
-.mat-icon:hover {
-    opacity: 0.7;
-}
- */
-
- /* .example-container {
-  display: flex;
-  flex-direction: column;
+.burgen-menu-container {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  top: 90px;
   right: 0;
+  background-color: #135aacd3;
+  height: 100vh;
+  width: 30vh;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
-
-.example-is-mobile .example-toolbar {
-  position: fixed;
-
-  z-index: 2;
-}
-
-h1.example-app-name {
-  margin-left: 8px;
-}
-
-.example-sidenav-container {
-
-  flex: 1;
-}
-
-.example-is-mobile .example-sidenav-container {
-
-  flex: 1 0 auto;
-}
-
- */
 
 @media (max-width: 900px) {
   nav {
@@ -135,7 +78,7 @@ h1.example-app-name {
     margin-left: 30px;
   }
 
-  .burger {
+  .burger-menu-button {
     display: flex;
   }
 }
