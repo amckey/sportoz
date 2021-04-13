@@ -57,6 +57,7 @@ li:last-child {
 .burger-menu-button {
   display: none;
   margin-right: 30px;
+  margin-top: -10px;
 }
 
 .burgen-menu-container {
