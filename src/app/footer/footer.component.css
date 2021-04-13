@@ -1,3 +1,7 @@
+a:hover {
+  opacity: 0.7;
+}
+
 li {
   display: inline;
 }
@@ -53,9 +57,6 @@ li + li {
   max-width: 20px;
   max-height: 20px;
   opacity: 0.9;
-}
-.footer-inner-contacts img:hover {
-  opacity: 0.7;
 }
 
 .footer-inner-contacts-title {
