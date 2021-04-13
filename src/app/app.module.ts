@@ -17,6 +17,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { IntroductionComponent } from './homepage/introduction/introduction.component';
 import { PartnersComponent } from './homepage/partners/partners.component';
 import { TrainingsComponent } from './homepage/trainings/trainings.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -39,6 +43,10 @@ import { TrainingsComponent } from './homepage/trainings/trainings.component';
     AppRoutingModule,
     MatProgressSpinnerModule,
     MatSelectModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
     RouterModule,
     RouterModule.forRoot([
       {path: '', component: HomepageComponent},

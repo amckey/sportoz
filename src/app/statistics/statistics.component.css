@@ -16,7 +16,6 @@ table tr:nth-of-type(even) {
 
 table tr:hover {
   background-color: #135aac1e;
-  font-weight: bold;
 }
 
 th {
