@@ -673,7 +673,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵdefineInjecto
                 { path: 'statistics', component: _statistics_statistics_component__WEBPACK_IMPORTED_MODULE_8__["StatisticsComponent"] },
                 { path: 'contacts', component: _contacts_contacts_component__WEBPACK_IMPORTED_MODULE_9__["ContactsComponent"] },
                 { path: '**', component: _homepage_homepage_component__WEBPACK_IMPORTED_MODULE_7__["HomepageComponent"] },
-            ]),
+            ], { scrollPositionRestoration: "top" }),
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
         _header_header_component__WEBPACK_IMPORTED_MODULE_4__["HeaderComponent"],
@@ -763,18 +763,12 @@ __webpack_require__.r(__webpack_exports__);
 
 class FooterComponent {
     constructor() {
-        this.instagramImage = '../../assets/instagram.svg';
-        this.facebookImage = '../../assets/facebook.svg';
-        this.phoneImage = '../../assets/phone.svg';
-        this.emailImage = '../../assets/email.svg';
-    }
-    ngOnInit() {
-    }
-    changeImagesSources() {
         this.instagramImage = './assets/instagram.svg';
         this.facebookImage = './assets/facebook.svg';
-        this.phoneImage = './assets/phone.svg';
-        this.emailImage = './assets/email.svg';
+        this.phoneImage = '../assets/phone.svg';
+        this.emailImage = '../assets/email.svg';
+    }
+    ngOnInit() {
     }
 }
 FooterComponent.ɵfac = function FooterComponent_Factory(t) { return new (t || FooterComponent)(); };

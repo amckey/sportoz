@@ -45,7 +45,8 @@ import { TrainingsComponent } from './homepage/trainings/trainings.component';
       {path: 'statistics', component: StatisticsComponent},
       {path: 'contacts', component: ContactsComponent},
       {path: '**', component: HomepageComponent},
-        ]),
+        ],
+        {scrollPositionRestoration: "top"}),
 
   ],
   providers: [],
