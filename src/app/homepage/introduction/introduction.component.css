@@ -12,8 +12,14 @@
   margin-top: 40px;
 }
 
+.container-inner2 {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
 .container-title {
-  width: 100%;
+  width: 80%;
   font-size: 25pt;
   line-height: 1.4em;
   margin: 20px auto;
@@ -39,7 +45,6 @@
   letter-spacing: 1px;
   text-align: center;
   margin-top: 20px;
-  width: 100%;
 }
 
 .component-button {
@@ -85,8 +90,77 @@
   text-align: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1100px) {
+  .container-inner-block {
+    height: 350px;
+  }
+
+  .container-inner-block-title {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container-inner-block {
+    height: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-inner-block {
+    height: 400px;
+  }
+
+  .container-inner-block-title {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 680px) {
+  .container-inner-block {
+    height: 480px;
+  }
+
+  .container-inner-block-title {
+    max-width: 170px;
+  }
+}
+
+@media (max-width: 535px) {
+  .container-inner-block {
+    margin: 20px;
+  }
+
+  .container-inner-block {
+    width: 80%;
+    height: 300px;
+  }
+
+  .container-inner-block-title {
+    max-width: 250px;
+  }
+
+  .container-subtitle {
+    margin: 0 30px;
+    margin-bottom: 30px;
+  }
+
+  .container-title2 {
+    margin: 30px 0;
+  }
+
+  .container-subtitle2 {
+    margin-top: 30px;
+  }
+
+}
+
+@media (max-width: 400px) {
   .container-inner {
     margin: 0 auto;
+  }
+
+  .container-inner-block {
+    height: 350px;
   }
 }

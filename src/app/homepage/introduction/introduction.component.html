@@ -3,7 +3,7 @@
 <div class="container">
 
   <div class="container-title">Тестирование общей физической подготовки по всей Латвии</div>
-  <div class="container-subtitle">Наша цель сделать мир здоровее и физически активнее</div>
+  <div class="container-subtitle">Наша цель - сделать мир здоровее и физически активнее</div>
   <div class=container-inner>
     <div class=container-inner-block>
       <div class=container-inner-block-image>
@@ -35,12 +35,14 @@
     </div>
   </div>
 
-  <div class="container-title2">Мы всегда рады ответить вам, если вы хотите записаться на тренировку или задать вопрос</div>
-  <div class="container-subtitle2">До следующего тестирования <b>{{nextSessionDay}}</b> осталось:
-    <b><countdown [config]="{ leftTime: timeLeftMs, format: 'd'}"></countdown> дней</b>,
-    <b><countdown [config]="{ leftTime: timeLeftMs, format: 'HH' }"></countdown> часов</b>,
-    <b><countdown [config]="{ leftTime: timeLeftMs, format: 'm' }"></countdown> минут</b>,
-    <b><countdown [config]="{ leftTime: timeLeftMs, format: 's' }"></countdown> секунд</b>.
+  <div class=container-inner2>
+    <div class="container-title2">Мы всегда рады ответить вам, если вы хотите записаться на тестирование, тренировку или задать вопрос</div>
+    <div class="container-subtitle2">До следующего тестирования <b>{{nextSessionDay}}</b> осталось:
+      <b><countdown [config]="{ leftTime: timeLeftMs, format: 'd'}"></countdown> дней</b>,
+      <b><countdown [config]="{ leftTime: timeLeftMs, format: 'HH' }"></countdown> часов</b>,
+      <b><countdown [config]="{ leftTime: timeLeftMs, format: 'm' }"></countdown> минут</b>,
+      <b><countdown [config]="{ leftTime: timeLeftMs, format: 's' }"></countdown> секунд</b>.
+    </div>
+    <div class=container-button> <button id=button class=component-button routerLink="contacts">Связаться с нами</button></div>
   </div>
-  <div class=container-button> <button id=button class=component-button routerLink="contacts">Связаться с нами</button></div>
 </div>
