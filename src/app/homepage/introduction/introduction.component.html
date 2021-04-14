@@ -1,7 +1,46 @@
+{{calculateLeftTime()}}
+
 <div class="container">
 
-  <div class="container-inner">
-    <div class="container-content">О проекте</div>
+  <div class="container-title">Тестирование общей физической подготовки по всей Латвии</div>
+  <div class="container-subtitle">Наша цель сделать мир здоровее и физически активнее</div>
+  <div class=container-inner>
+    <div class=container-inner-block>
+      <div class=container-inner-block-image>
+        <img src="./assets/fitness.svg">
+      </div>
+      <div class=container-inner-block-title>Определение уровня физической подготовки</div>
+      <div class=container-inner-block-text>Тесты общефизической подготовки разработаны для определения уровня физического развития обычного человека (не только спортсмена)</div>
+    </div>
+    <div class=container-inner-block>
+      <div class=container-inner-block-image>
+        <img src="./assets/age.svg">
+      </div>
+      <div class=container-inner-block-title>"Нет" ограничениям по возрасту</div>
+      <div class=container-inner-block-text>Нормативы могут сдавать люди от 7 до 70 лет и старше</div>
+    </div>
+    <div class=container-inner-block>
+      <div class=container-inner-block-image>
+        <img src="./assets/certificate.svg">
+      </div>
+      <div class=container-inner-block-title>Памятный диплом</div>
+      <div class=container-inner-block-text>Каждому участнику вручается памятный диплом</div>
+    </div>
+    <div class=container-inner-block>
+      <div class=container-inner-block-image>
+        <img src="./assets/cup.svg">
+      </div>
+      <div class=container-inner-block-title>Результативность награждается</div>
+      <div class=container-inner-block-text>Участники, чей результат соответствует бронзовому, серебряному и золотому показателям, будут награждены не только памятным дипломом, но и соответствующим значком</div>
+    </div>
   </div>
 
+  <div class="container-title2">Мы всегда рады ответить вам, если вы хотите записаться на тренировку или задать вопрос</div>
+  <div class="container-subtitle2">До следующего тестирования <b>{{nextSessionDay}}</b> осталось:
+    <b><countdown [config]="{ leftTime: timeLeftMs, format: 'd'}"></countdown> дней</b>,
+    <b><countdown [config]="{ leftTime: timeLeftMs, format: 'HH' }"></countdown> часов</b>,
+    <b><countdown [config]="{ leftTime: timeLeftMs, format: 'm' }"></countdown> минут</b>,
+    <b><countdown [config]="{ leftTime: timeLeftMs, format: 's' }"></countdown> секунд</b>.
+  </div>
+  <div class=container-button> <button id=button class=component-button routerLink="contacts">Связаться с нами</button></div>
 </div>

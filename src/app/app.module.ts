@@ -21,7 +21,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
-
+import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
   declarations: [
@@ -47,6 +47,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    CountdownModule,
     RouterModule,
     RouterModule.forRoot([
       {path: '', component: HomepageComponent},

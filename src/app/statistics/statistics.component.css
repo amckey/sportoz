@@ -34,27 +34,13 @@ td {
   padding: 12px 15px;
 }
 
-.rendering {
-  background-color: rgb(238, 238, 238);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.loader {
-  margin: auto;
-  top: 40%;
-}
-
 .container {
   width: 100%;
   padding-top: 120px;
 }
 
 .container-intro {
-  width: 80%;
+  width: 75%;
   text-align: center;
   margin: 20px auto;
   border-bottom: 1px solid lightgray;
@@ -70,6 +56,7 @@ td {
   font-size: 11pt;
   color: rgb(80, 80, 80);
   padding-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .container-filters {
