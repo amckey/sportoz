@@ -37,7 +37,7 @@
 
   <div class=container-inner2>
     <div class="container-title2">Мы всегда рады ответить вам, если вы хотите записаться на тестирование, тренировку или задать вопрос</div>
-    <div class="container-subtitle2">До следующего тестирования <b>{{nextSessionDay}}</b> осталось:
+    <div class="container-subtitle2">До следующего тестирования <b>{{nextSessionDay}}</b> осталось:<br><br>
       <b><countdown [config]="{ leftTime: timeLeftMs, format: 'd'}"></countdown> дней</b>,
       <b><countdown [config]="{ leftTime: timeLeftMs, format: 'HH' }"></countdown> часов</b>,
       <b><countdown [config]="{ leftTime: timeLeftMs, format: 'm' }"></countdown> минут</b>,
