@@ -14,7 +14,7 @@
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSdeBPpaMfV4NadpOhpfGOJXqfOktNIfmQoh7fyWHbvisftXJA/formResponse"
     method="post"
     target="hidden_iframe"
-    (submit)="showSuccessfulMessage()"
+    (submit)="showConfirmationMessage()"
     >
         <div class=container-inner-content>
           <input class=component-input type="text" placeholder="Полное имя*" name="entry.2005620554" required>
@@ -35,6 +35,6 @@
 
 
   <div class=container-successful-message>
-    <p *ngIf="!ch" class=whitespace></p>
-    <p *ngIf="ch" class=message><b>Заявка была отправлена, мы свяжемся с вами в течение 24 часов!</b></p>
+    <p *ngIf="!formSubmitted" class=whitespace></p>
+    <p *ngIf="formSubmitted" class=message><b>Заявка была отправлена, мы свяжемся с вами в течение 24 часов!</b></p>
   </div>

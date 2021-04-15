@@ -6,15 +6,17 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./contacts.component.css']
 })
 export class ContactsComponent implements OnInit {
-  ch: any;
+  
+  formSubmitted: boolean = false;
+
   constructor() {
   }
 
   ngOnInit(): void {
   }
 
-  showSuccessfulMessage() {
-    this.ch = true;
+  showConfirmationMessage() {
+    this.formSubmitted = true;
   }
 
 }

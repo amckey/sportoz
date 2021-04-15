@@ -62,7 +62,7 @@ li + li {
 }
 
 .footer-inner-contacts-items {
-  width: 170px;
+  width: 200px;
   display: flex;
   justify-content: space-between;
   opacity: 0.95;
@@ -116,7 +116,7 @@ li + li {
   }
 
   .footer-inner-contacts-items {
-    width: 140px;
+    width: 160px;
   }
 }
 

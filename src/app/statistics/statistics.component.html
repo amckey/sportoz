@@ -5,10 +5,10 @@
     <p class=container-intro-subtitle>Пройдя тестирование, ты попадёшь в эту таблицу со своим результатом (<b>золотой</b>, <b>серебряный</b>, <b>бронзовый</b> и <b>без оценки</b>). Продолжай тренироваться и не останавливайся на достигнутом!<br><br> Не забывай, что данные таблицы обновляются с каждым новым этапом тестирования!</p>
   </div>
 
-  <div class=container-filters *ngIf="rendered">
+  <div class=container-filters>
 
     <div class=filter>
-    <mat-form-field appearance="fill" *ngIf="rendered">
+    <mat-form-field appearance="fill">
       <mat-label>Пол</mat-label>
       <mat-select #mySelect1 disableRipple (selectionChange)="filterList()">
         <mat-option></mat-option>
@@ -60,6 +60,6 @@
 
     </div>
   </div>
-  <div *ngIf="tableContainsData" class=container-table-no-data>Нет данных</div>
+  <div *ngIf="!tableContainsData" class=container-table-no-data>Нет данных</div>
 
 </div>
