@@ -31,10 +31,12 @@ export class IntroductionComponent {
   nextSessionDay: any;
   timeLeftMs: any;
 
+  justToCheck: any;
+
   calculateLeftTime() {
     let currentDate: any = Date.now()
     let nextDateMs = Date.parse(this.nextSessionDate)
-    this.timeLeftMs = Math.round((nextDateMs - currentDate)*0.001)
+    this.timeLeftMs = Math.round((nextDateMs - currentDate)*0.001 - 10800)
   }
 
 }
