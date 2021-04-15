@@ -9,11 +9,12 @@ import { CountdownComponent } from 'ngx-countdown';
   templateUrl: './introduction.component.html',
   styleUrls: ['./introduction.component.css']
 })
-export class IntroductionComponent {
+export class IntroductionComponent implements OnInit {
 
-  constructor(private peopleService: PeopleService) { }
+  constructor(private peopleService: PeopleService) {
+  }
 
-  @ViewChild('countdown') counter: any;
+  @ViewChild('cd') counter: any;
 
   ngOnInit(): void {
     this.peopleService.getDate().subscribe(
@@ -24,14 +25,12 @@ export class IntroductionComponent {
 
       (data: any) => this.nextSessionDay = data.values[1][0])
 
-      setTimeout(() => this.counter.restart());
+      this.counter.restart()
   }
 
   nextSessionDate: any;
   nextSessionDay: any;
   timeLeftMs: any;
-
-  justToCheck: any;
 
   calculateLeftTime() {
     let currentDate: any = Date.now()
