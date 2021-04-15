@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { PeopleService } from '../../people.service';
+import { CountdownComponent } from 'ngx-countdown';
 
 
 
@@ -12,6 +13,8 @@ export class IntroductionComponent {
 
   constructor(private peopleService: PeopleService) { }
 
+  @ViewChild('countdown') counter: any;
+
   ngOnInit(): void {
     this.peopleService.getDate().subscribe(
 
@@ -20,6 +23,8 @@ export class IntroductionComponent {
       this.peopleService.getDate().subscribe(
 
       (data: any) => this.nextSessionDay = data.values[1][0])
+
+      setTimeout(() => this.counter.restart());
   }
 
   nextSessionDate: any;
