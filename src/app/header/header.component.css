@@ -83,6 +83,12 @@ li:last-child {
   -webkit-tap-highlight-color: transparent;
 }
 
+.contacts-button {
+  background-color: whitesmoke;
+  color: #135aac;
+  border-radius: 30px;
+}
+
 @media (max-width: 900px) {
   nav {
     display: none;
