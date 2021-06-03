@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ghp": "ng build --outputPath=docs --base-href=https://amckey.github.io/sportoz/"
+    "ghp": "ng build --outputPath=docs --base-href=vfs.fit"
   },
   "private": true,
   "dependencies": {
