@@ -5,6 +5,14 @@
   color: rgb(49, 49, 49);
 }
 
+.container::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    border-top: 2px solid #135aac;
+}
+
 .container-inner {
   display: flex;
   justify-content: center;
