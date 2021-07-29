@@ -69,6 +69,22 @@
   display: flex;
 }
 
+.component-button {
+  background-color: whitesmoke;
+  font-size: 13pt;
+  opacity: 0.9;
+  width: 220px !important;
+  font-size: 11pt;
+}
+
+.container-button {
+  text-align: center;
+}
+
+.component-button:active {
+  background-color: white;
+}
+
 @media (max-width: 1300px) {
   .container-inner-block {
     height: 220px;

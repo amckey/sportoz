@@ -20,7 +20,6 @@ h1, h2, h3, ul, li, a {
 }
 a {text-decoration: none; transition: .2s; -webkit-tap-highlight-color: transparent; color: whitesmoke}
 a:visited { text-decoration: none; color:whitesmoke; }
-a:hover { text-decoration: none; color:whitesmoke; transition: .2s; cursor: pointer;}
 a:focus { text-decoration: none; color:whitesmoke; }
 a:active { text-decoration: none; color:whitesmoke }
 * {
@@ -39,16 +38,22 @@ a:active { text-decoration: none; color:whitesmoke }
   transform: translateY(0px);
   transition-duration: 0.2s;
 }
-#button:hover {
- cursor: pointer;
- transform: translateY(-4px);
- transition-duration: 0.2s;
-}
 #button:active {
  opacity: 1;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@media (hover: hover) {
+
+  #button:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+    transition-duration: 0.2s;
+  }
+
+  a:hover { text-decoration: none; color:whitesmoke; transition: .2s; cursor: pointer;}
+
+}
 
 
 /*# sourceMappingURL=styles.css.map*/

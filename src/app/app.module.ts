@@ -55,8 +55,7 @@ import { CountdownModule } from 'ngx-countdown';
       {path: 'contacts', component: ContactsComponent},
       {path: '**', component: HomepageComponent},
         ],
-        {scrollPositionRestoration: "top"}),
-
+        {anchorScrolling: 'enabled', onSameUrlNavigation: 'reload', scrollPositionRestoration: 'top'}),
   ],
   providers: [],
   bootstrap: [AppComponent]

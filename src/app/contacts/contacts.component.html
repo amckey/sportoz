@@ -1,9 +1,13 @@
 <div class=container-intro>
-    <p class=container-intro-title>Пройти тестирование или задать вопрос</p>
-    <p class=container-intro-subtitle>Запишись на тестирование или на тренировку к профессиональному тренеру, чтобы сравнить свой результат до и после! <br><br> Помни, что даже получив высшую оценку по нормативам, необходимо поддерживать отличную форму! </p>
-  </div>
-
-  <div class="container-inner">
+    <p class=container-intro-title>Свяжитесь с нами</p>
+    <p class=container-intro-subtitle>Ниже вы можете выбрать цель связи: записаться на тестирование, записаться на тренировку или связаться по любому другому вопросу.</p>
+    <div class=container-intro-buttons>
+      <button class=component-button-x (click)="handleEvent($event)" style="text-align: center" id=test>Пройти тестирование</button>
+      <button class=component-button-x (click)="handleEvent($event)" style="text-align: center" id=test1>Записаться на тренировку</button>
+      <button class=component-button-x (click)="handleEvent($event)" style="text-align: center" id=test2>Обратная связь</button>
+    </div>
+</div>
+<div class="container-inner">
 
     <iframe
     name="hidden_iframe"
@@ -14,8 +18,22 @@
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSdeBPpaMfV4NadpOhpfGOJXqfOktNIfmQoh7fyWHbvisftXJA/formResponse"
     method="post"
     target="hidden_iframe"
-    (submit)="showConfirmationMessage()"
+    (submit)="submitForm()"
+    *ngIf="firstBlock"
     >
+    <div class=container-inner-comments>
+      <div class=container-inner-comments-title>Прохождение тестирования</div>
+      <div class=container-inner-comments-rules>
+        <ul>
+          <li>Стоимость тестирования 10€</li>
+          <li>Каждый участник получит памятный диплом</li>
+          <li>Золотые серебряные и бронзовые результаты будут награждены соответствующим значком</li>
+          <li>Помни, что даже получив высшую оценку по нормативам, необходимо поддерживать отличную форму!</li>
+          <li>Попробуй наши тренировки с профессиональным тренером!</li>
+        </ul>
+      </div>
+    </div>
+        <input type="hidden" id="custId" name="custId" value="Заявка на тестирование" name="entry.1125602923">
         <div class=container-inner-content>
           <input class=component-input type="text" placeholder="Полное имя*" name="entry.2005620554" required>
         </div>
@@ -28,13 +46,75 @@
           <input class=component-input type="tel" placeholder="Номер телефона*" name="entry.1065046570" required>
         </div>
         <div class=component-inner-button>
-          <button class=component-button type="submit" id="button">Отправить</button>
+          <button class=component-button-x type="submit" id="button">Отправить</button>
         </div>
   </form>
-  </div>
 
-
-  <div class=container-successful-message>
-    <p *ngIf="!formSubmitted" class=whitespace></p>
-    <p *ngIf="formSubmitted" class=message><b>Заявка была отправлена, мы свяжемся с вами в течение 24 часов!</b></p>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSdeBPpaMfV4NadpOhpfGOJXqfOktNIfmQoh7fyWHbvisftXJA/formResponse"
+  method="post"
+  target="hidden_iframe"
+  (submit)="submitForm()"
+  *ngIf="secondBlock"
+  >
+  <div class=container-inner-comments>
+    <div class=container-inner-comments-title>Записаться на тренировку</div>
+    <div class=container-inner-comments-rules style="text-align: center">Запишись на тренировку к профессиональному тренеру! Посмотри, как измениться твой результат спустя время.</div>
   </div>
+      <input type="hidden" id="custId" name="custId" value="Запись на тренировку" name="entry.1125602923">
+      <div class=container-inner-content>
+        <input class=component-input type="text" placeholder="Полное имя*" name="entry.2005620554" required>
+      </div>
+
+      <div class=container-inner-content>
+        <input class=component-input type="text" placeholder="Возраст*" name="entry.1045781291" required>
+      </div>
+
+      <div class=container-inner-content>
+        <input class=component-input type="tel" placeholder="Номер телефона*" name="entry.1065046570" required>
+      </div>
+      <div class=component-inner-button>
+        <button class=component-button-x type="submit" id="button">Отправить</button>
+      </div>
+    </form>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdeBPpaMfV4NadpOhpfGOJXqfOktNIfmQoh7fyWHbvisftXJA/formResponse"
+    method="post"
+    target="hidden_iframe"
+    (submit)="submitForm()"
+    *ngIf="thirdBlock"
+    >
+    <div class=container-inner-comments>
+      <div class=container-inner-comments-title>Обратная связь</div>
+      <div class=container-inner-comments-rules style="text-align: center">Мы всегда открыты для общения! Здесь можно оставить свои вопросы, предложения или просто выразить своё мнение о проекте.</div>
+    </div>
+        <input type="hidden" id="custId" name="custId" value="Обратная связь" name="entry.1125602923">
+        <div class=container-inner-content>
+          <input class=component-input type="email" placeholder="E-mail*" name="entry.1846012067" required>
+        </div>
+        <div class=container-inner-content>
+          <textarea class=component-input rows="6" placeholder="Оставьте ваше сообщение*" name="entry.1455110197" required></textarea>
+        </div>
+        <div class=component-inner-button>
+          <button class=component-button-x type="submit" id="button">Отправить</button>
+        </div>
+    </form>
+
+</div>
+
+<div class=modal *ngIf="modalOpeneded" (click)="processClickOutside()">
+  <div class=modal-content (mouseleave)="detectModalMouseLeave()" (mouseenter)="detectModalMouseEnter()">
+    <div class="close-button-element">
+        <img (click)="refreshComponent()" class=close-button src="./assets/cross.png">
+    </div>
+    <div class=close-container>
+      <div class=close-container-image>
+        <img class=close-container-image src="./assets/mail.png">
+      </div>
+      <div class=close-container-text>
+        <div class=close-container-text-title>Сообщение успешно отправлено!</div>
+        <div class=close-container-text-subtitle>Благодарим вас за то, что написали нам. Мы свяжемся с вами в течение 24 часов.</div>
+      </div>
+    </div>
+  </div>
+</div>
+

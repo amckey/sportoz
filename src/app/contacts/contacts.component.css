@@ -4,24 +4,30 @@ p {
 
 .container-intro {
   padding-top: 120px;
-  width: 60%;
+  width: 50%;
   text-align: center;
   margin: 30px auto;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 2px solid #135aac;
 }
 
 .container-intro-title {
   font-size: 25pt;
   color: rgb(49, 49, 49);
-  padding-bottom: 25px;
-  line-height: 100%;
+  margin-bottom: 20px;
+  line-height: 1.4em;
 }
 
 .container-intro-subtitle {
-  font-size: 11pt;
-  color: rgb(80, 80, 80);
-  padding: 20px;
+  font-size: 14pt;
+  color: rgb(99, 99, 99);
+  padding-bottom: 20px;
   letter-spacing: 1px;
+}
+
+.container-intro-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
 }
 
 .container-inner {
@@ -32,17 +38,40 @@ p {
   justify-content: center;
 }
 
+.container-inner-comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 80px;
+  }
+
+.container-inner-comments-title {
+  font-size: 14pt;
+  color: rgb(49, 49, 49);
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+
+}
+
+.container-inner-comments-rules {
+  font-size: 12pt;
+  color: rgb(99, 99, 99);
+  margin-bottom: 20px;
+  list-style: inside;
+}
+
 .container-inner-content {
   width: 60vh;
   display: flex;
   justify-content: center;
   font-size: 15pt;
-  margin: 30px;
+  margin: 24px auto;
   line-height: 1.4em;
 }
 
 .component-input {
   border-radius: 5px;
+  font-family: Lato, sans-serif !important;
   background-color: whitesmoke;
   width: 100%;
   min-height: 40px;
@@ -53,7 +82,7 @@ p {
   border-radius: 12px;
   outline: none;
   box-shadow: 0 1px 3px rgb(20 50 0 / 15%);
-  padding: 15px;
+  padding: 12px;
 }
 
 
@@ -61,6 +90,7 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  outline: none;
 }
 
 .component-button {
@@ -68,10 +98,7 @@ p {
   color: rgb(49, 49, 49);
   font-size: 13pt;
   opacity: 0.9;
-}
-
-.component-button:active {
-  background-color: white;
+  outline: none;
 }
 
 .container-successful-message {
@@ -85,11 +112,126 @@ p {
   margin: 10px;
 }
 
-.message {
-  text-align: center;
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
-@media (max-width: 500px) {
+.modal-content {
+  margin: auto 20px;
+  background-color: whitesmoke;
+  width: 700px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.close-button-element {
+  width: inherit;
+  text-align: right;
+  padding: 25px 25px 0 0;
+  color: red;
+  font-size: 20pt;
+  z-index: 10;
+}
+
+.close-button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.close-container {
+  background-color: whitesmoke;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.close-container-image {
+  width: 150px;
+}
+
+.close-container-text {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+}
+
+.close-container-text-title {
+  color: rgb(49, 49, 49);
+  margin: 10px;
+  font-size: 25pt;
+}
+
+.close-container-text-subtitle {
+  color: rgb(99, 99, 99);
+  margin: 20px;
+  font-size: 14pt;
+}
+
+.component-button-x {
+  margin: auto 20px;
+  font-size: 11pt;
+  min-width: 200px;
+  height: 40px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: 0 1px 3px rgb(20 50 0 / 15%);
+  transform: translateY(0px);
+  transition-duration: 0.2s;
+  outline: none;
+}
+
+@media (hover: hover) {
+  .component-button-x:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+    transition-duration: 0.2s;
+   }
+
+   .component-button:active {
+    background-color: white;
+  }
+
+  .component-button-x:active {
+    background-color: white;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+    .container-intro-buttons{
+      flex-direction: column;
+    }
+
+    .component-button-x {
+      margin: 12px 0;
+    }
+
+    .container-inner-comments {
+      margin: auto 40px;
+      }
+  }
+
+@media (max-width: 600px) {
   .container-intro {
     width: 80%;
   }
