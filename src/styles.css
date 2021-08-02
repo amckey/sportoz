@@ -41,14 +41,14 @@ a:active { text-decoration: none; color:whitesmoke }
   box-shadow: 0 1px 3px rgb(20 50 0 / 15%);
 }
 
-#button:active {
- opacity: 1;
-}
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @media (hover: hover) {
+
+  #button:active {
+    opacity: 1;
+   }
 
   #button {
     transform: translateY(0px);
