@@ -2,9 +2,9 @@
     <p class=container-intro-title>Свяжитесь с нами</p>
     <p class=container-intro-subtitle>Ниже вы можете выбрать цель связи: записаться на тестирование, записаться на тренировку или связаться по любому другому вопросу.</p>
     <div class=container-intro-buttons>
-      <button class=component-button-x (click)="handleEvent($event)" style="text-align: center" id=test>Пройти тестирование</button>
-      <button class=component-button-x (click)="handleEvent($event)" style="text-align: center" id=test1>Записаться на тренировку</button>
-      <button class=component-button-x (click)="handleEvent($event)" style="text-align: center" id=test2>Обратная связь</button>
+      <button [ngStyle]="{'background-color': firstBlock ? '#135aac' : null, 'color': firstBlock ? 'white': null}" class=component-button-x (click)="handleEvent($event)" style="text-align: center" id=test>Пройти тестирование</button>
+      <button [ngStyle]="{'background-color': secondBlock ? '#135aac' : null, 'color': secondBlock ? 'white': null}" class=component-button-x (click)="handleEvent($event)" style="text-align: center" id=test1>Записаться на тренировку</button>
+      <button [ngStyle]="{'background-color': thirdBlock ? '#135aac' : null, 'color': thirdBlock ? 'white': null}" class=component-button-x (click)="handleEvent($event)" style="text-align: center" id=test2>Обратная связь</button>
     </div>
 </div>
 <div class="container-inner">
