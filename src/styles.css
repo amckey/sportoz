@@ -39,8 +39,6 @@ a:active { text-decoration: none; color:whitesmoke }
   border-radius: 12px;
   outline: none;
   box-shadow: 0 1px 3px rgb(20 50 0 / 15%);
-  transform: translateY(0px);
-  transition-duration: 0.2s;
 }
 
 #button:active {
@@ -51,6 +49,11 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @media (hover: hover) {
+
+  #button {
+    transform: translateY(0px);
+    transition-duration: 0.2s;
+  }
 
   #button:hover {
     cursor: pointer;
